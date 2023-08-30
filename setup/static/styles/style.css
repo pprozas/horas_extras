@@ -1,0 +1,60 @@
+/* Base do css bootstrap */
+
+.container-fluid{
+
+    padding: 0;
+}
+
+/* Nav Bar nova */
+
+.navbar{
+
+    margin-bottom: 20px;
+    
+
+
+}
+
+
+
+.navbar-nav{
+
+    margin: auto;
+    
+
+
+}
+
+.nav-bar-options{
+
+    gap: 5em;
+}
+
+.navbar-brand{
+
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+
+.navbar-light .navbar-nav a.nav-link{
+
+    color: #333;
+    letter-spacing: 1px;
+
+}
+
+a.nav-link:hover{
+
+    color: white;
+    font-size: large;
+}
+
+/* Index css */
+
+.text-p-h3{
+
+    margin: auto;
+    margin-top: 2em;
+    width: 30%;
+}

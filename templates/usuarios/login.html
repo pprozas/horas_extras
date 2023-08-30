@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+{% load static %}
+{% load crispy_forms_tags %}    
+{%block title%} Login {%endblock%}
+
+{%block content%}
+
+    <div class = "row">
+        <div class "col-md-4 offset-md-4">
+            <div class = "auth-card" style = "margin:auto">
+                <div class = "card-body">
+                    <div class = "card-title text-center" style = "margin-top: 6em">
+                        <h1 class=>Cadastro das horas Extras
+                            <i class="fa-regular fa-clock fa-2xl"></i>
+                        </h1>
+                        <h4 class = "card-title"> Faça seu Login! </h4>
+
+                        <form class = "col-md-3 justify-content-center" action="{%url 'login' %}" method="POST" style = "margin:auto;margin-top: 6em">
+                            {%csrf_token%}
+                            {%include 'usuarios/partials/_alertas.html'%}
+                            <input type = "hidden" name = "next" value = "{{ next }}">
+                            {{ forms|crispy}}
+
+                            <button type = "submit" class = "btn btn-primary btn-block col-md-4"> Logar </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{%endblock%}

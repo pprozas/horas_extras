@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Página Inicial {% endblock %}
+
+{%block content%}
+
+    
+<section class = "row section-body">
+
+    {%include 'usuarios/partials/_alertas.html'%}
+    
+    <div class = "row-2" style = "margin-top: 8em">
+        <h1 class="text-center" >Cadastro das horas Extras
+        <i class="fa-regular fa-clock fa-2xl"></i>
+        </h1>
+        <h3 class="text-sm-center text-p-h3">Aqui de forma rápida e fácil você poderá cadastrar as suas Horas Extras com detalhes! Facilitando dessa forma a análise ao final do mês! </h3>
+
+        <h3 class = "text-center" style = "margin-top: 2em"> Faça Login ou Cadastre-se! </h3>
+    
+    </div>
+
+
+    
+
+</section>
+
+
+
+
+{%endblock%}

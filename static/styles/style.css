@@ -1,0 +1,32 @@
+/* Base do css bootstrap */
+
+.container-fluid{
+
+    padding: 0;
+}
+
+/* Nav Bar nova */
+
+.navbar{
+
+    border-bottom: 1 solid #333;
+    margin-bottom: 20px;
+}
+
+.navbar-nav{
+
+    margin: auto;
+
+}
+
+.navbar-brand{
+
+    font-weight: bold;
+}
+
+
+.navbar-light .navbar-nav a.nav-link{
+
+    color: #333;
+    letter-spacing: 1px;
+}
